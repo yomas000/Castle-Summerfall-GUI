@@ -15,7 +15,7 @@
    <children>
       <AnchorPane layoutX="675.0" prefHeight="674.0" prefWidth="228.0" style="-fx-background-color: #181818;">
          <children>
-            <Button fx:id="howtoButton" layoutX="19.0" layoutY="635.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="191.0" style="-fx-background-color: #9df069;" text="How to Play" />
+            <Button fx:id="howtoButton" layoutX="19.0" layoutY="635.0" mnemonicParsing="false" onAction="#goToHow" prefHeight="25.0" prefWidth="191.0" style="-fx-background-color: #9df069;" text="How to Play" />
             <ProgressBar fx:id="healthBar" layoutX="15.0" layoutY="379.0" prefHeight="18.0" prefWidth="200.0" progress="0.0" stylesheets="@style.css" />
             <Label alignment="CENTER" layoutX="19.0" layoutY="354.0" prefHeight="17.0" prefWidth="191.0" text="Health" textAlignment="CENTER" textFill="WHITE" />
             <ProgressBar fx:id="speedBar" layoutX="14.0" layoutY="296.0" prefWidth="200.0" progress="0.0" />

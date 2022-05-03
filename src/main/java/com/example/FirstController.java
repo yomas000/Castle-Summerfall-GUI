@@ -9,4 +9,9 @@ public class FirstController {
     private void goToSettings() throws IOException{
         App.setRoot("settings");
     }
+
+    @FXML
+    private void goToHow() throws IOException {
+        App.setRoot("how");
+    }
 }
