@@ -10,4 +10,12 @@ import javafx.scene.layout.VBox;
 
 public class FirstController {
 
+    @FXML
+    private void goToSettings(){
+        try {
+            App.setRoot("settings");
+        } catch (IOException e) {
+           System.out.println("Couldn't find that file");
+        }
+    }
 }

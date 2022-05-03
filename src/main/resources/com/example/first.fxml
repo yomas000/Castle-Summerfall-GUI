@@ -26,7 +26,7 @@
                   <Font size="18.0" />
                </font>
             </Label>
-            <Button fx:id="settingButton" layoutX="19.0" layoutY="597.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="191.0" style="-fx-background-color: #9df069;" text="Settings" />
+            <Button fx:id="settingButton" layoutX="19.0" layoutY="597.0" mnemonicParsing="false" onAction="#goToSettings" prefHeight="25.0" prefWidth="191.0" style="-fx-background-color: #9df069;" text="Settings" />
          </children></AnchorPane>
       <TextFlow fx:id="textOutput" layoutX="11.0" layoutY="13.0" prefHeight="402.0" prefWidth="640.0" style="-fx-background-color: #282828; -fx-background-radius: 30px;" />
       <TabPane layoutX="14.0" layoutY="439.0" prefHeight="156.0" prefWidth="640.0" stylesheets="@style.css" tabClosingPolicy="UNAVAILABLE">

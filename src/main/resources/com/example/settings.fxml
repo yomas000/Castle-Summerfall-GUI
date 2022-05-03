@@ -10,7 +10,7 @@
    <children>
       <AnchorPane fx:id="backButton" layoutX="685.0" layoutY="-1.0" prefHeight="674.0" prefWidth="219.0" style="-fx-background-color: #181818;">
          <children>
-            <Button layoutX="14.0" layoutY="621.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="193.0" style="-fx-background-color: #9df069;" text="Back" />
+            <Button layoutX="14.0" layoutY="621.0" mnemonicParsing="false" onAction="#goHome" prefHeight="29.0" prefWidth="193.0" style="-fx-background-color: #9df069;" text="Back" />
          </children>
       </AnchorPane>
       <Label layoutX="29.0" layoutY="33.0" text="Interactable Preset Location" textFill="WHITE">
