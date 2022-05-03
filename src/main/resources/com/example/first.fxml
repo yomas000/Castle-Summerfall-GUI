@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.TextFlow?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="674.0" prefWidth="903.0" style="-fx-background-color: #121212;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.FirstController">
+   <children>
+      <AnchorPane layoutX="675.0" prefHeight="674.0" prefWidth="228.0" style="-fx-background-color: #181818;">
+         <children>
+            <Button fx:id="howtoButton" layoutX="19.0" layoutY="635.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="191.0" style="-fx-background-color: #9df069;" text="How to Play" />
+            <ProgressBar fx:id="healthBar" layoutX="15.0" layoutY="379.0" prefHeight="18.0" prefWidth="200.0" progress="0.0" stylesheets="@style.css" />
+            <Label alignment="CENTER" layoutX="19.0" layoutY="354.0" prefHeight="17.0" prefWidth="191.0" text="Health" textAlignment="CENTER" textFill="WHITE" />
+            <ProgressBar fx:id="speedBar" layoutX="14.0" layoutY="296.0" prefWidth="200.0" progress="0.0" />
+            <Label alignment="CENTER" layoutX="19.0" layoutY="273.0" prefHeight="17.0" prefWidth="191.0" text="Speed" textAlignment="CENTER" textFill="WHITE" />
+            <VBox fx:id="inventoryOutput" layoutX="10.0" layoutY="46.0" prefHeight="217.0" prefWidth="200.0" style="-fx-background-color: #282828; -fx-background-radius: 10px;" />
+            <Label alignment="CENTER" layoutX="10.0" layoutY="14.0" prefHeight="25.0" prefWidth="191.0" text="Inventory" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Button fx:id="settingButton" layoutX="19.0" layoutY="597.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="191.0" style="-fx-background-color: #9df069;" text="Settings" />
+         </children></AnchorPane>
+      <TextFlow fx:id="textOutput" layoutX="11.0" layoutY="13.0" prefHeight="402.0" prefWidth="640.0" style="-fx-background-color: #282828; -fx-background-radius: 30px;" />
+      <TabPane layoutX="14.0" layoutY="439.0" prefHeight="156.0" prefWidth="640.0" stylesheets="@style.css" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab style="-fx-background-color: #9df069;" text="Move">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Button layoutX="346.0" layoutY="51.0" mnemonicParsing="false" text="Move East" />
+                        <Button layoutX="258.0" layoutY="89.0" mnemonicParsing="false" text="Move South" />
+                        <Button layoutX="172.0" layoutY="52.0" mnemonicParsing="false" text="Move West" />
+                        <Button layoutX="258.0" layoutY="14.0" mnemonicParsing="false" text="Move North" />
+                     </children></AnchorPane>
+            </content>
+          </Tab>
+          <Tab style="-fx-background-color: #9df069;" text="Map">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" text="Display Map" />
+                        <Button layoutX="14.0" layoutY="58.0" mnemonicParsing="false" text="Bookmark Room" />
+                     </children></AnchorPane>
+            </content>
+          </Tab>
+            <Tab style="-fx-background-color: #9df069;" text="Item Commands">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" text="Inspect Item" />
+                     </children></AnchorPane>
+              </content>
+            </Tab>
+            <Tab style="-fx-background-color: #9df069;" text="Misc">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" text="Attack Actor" />
+                     </children></AnchorPane>
+              </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+      <TextField fx:id="textInput" layoutX="14.0" layoutY="621.0" prefHeight="39.0" prefWidth="538.0" style="-fx-background-color: #B3B3B3;">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextField>
+      <Button fx:id="submitButton" layoutX="569.0" layoutY="621.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="95.0" style="-fx-background-color: #9df069;" text="Submit">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

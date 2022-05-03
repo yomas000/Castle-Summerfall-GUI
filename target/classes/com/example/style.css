@@ -1,0 +1,17 @@
+.tab-header-area .tab-header-background {
+    -fx-background-color: #181818;
+}
+
+.tab-pane {
+    -fx-background-color: #282828;
+    -fx-background-radius: 30px;
+}
+
+ /* .progress-bar>.track {
+    -fx-text-box-border: #282828;
+    -fx-control-inner-background: #282828;
+}  */
+
+.button {
+    -fx-background-color: #9df069;
+}
